@@ -3,8 +3,8 @@
 
 package com.example.grpc.test;
 
-public final class GrpcProto {
-  private GrpcProto() {}
+public final class GrpcProtoTest {
+  private GrpcProtoTest() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -15,15 +15,15 @@ public final class GrpcProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_grpc_GrpcRequest_descriptor;
+    internal_static_grpcTest_GrpcRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_grpc_GrpcRequest_fieldAccessorTable;
+      internal_static_grpcTest_GrpcRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_grpc_GrpcResponse_descriptor;
+    internal_static_grpcTest_GrpcResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_grpc_GrpcResponse_fieldAccessorTable;
+      internal_static_grpcTest_GrpcResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -33,11 +33,12 @@ public final class GrpcProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\ngrpc.proto\022\004grpc\"\033\n\013GrpcRequest\022\014\n\004nam" +
-      "e\030\001 \001(\t\"\035\n\014GrpcResponse\022\r\n\005name2\030\001 \001(\t2<" +
-      "\n\013GrpcService\022-\n\004Grpc\022\021.grpc.GrpcRequest" +
-      "\032\022.grpc.GrpcResponseB$\n\025com.example.grpc" +
-      ".testB\tGrpcProtoP\001b\006proto3"
+      "\n\ngrpc.proto\022\010grpcTest\"\036\n\013GrpcRequest\022\017\n" +
+      "\007request\030\001 \001(\t\" \n\014GrpcResponse\022\020\n\010respon" +
+      "se\030\001 \001(\t2J\n\rGrpcServicePj\0229\n\010GrpcTest\022\025." +
+      "grpcTest.GrpcRequest\032\026.grpcTest.GrpcResp" +
+      "onseB(\n\025com.example.grpc.testB\rGrpcProto" +
+      "TestP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -51,18 +52,18 @@ public final class GrpcProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_grpc_GrpcRequest_descriptor =
+    internal_static_grpcTest_GrpcRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_grpc_GrpcRequest_fieldAccessorTable = new
+    internal_static_grpcTest_GrpcRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_grpc_GrpcRequest_descriptor,
-        new java.lang.String[] { "Name", });
-    internal_static_grpc_GrpcResponse_descriptor =
+        internal_static_grpcTest_GrpcRequest_descriptor,
+        new java.lang.String[] { "Request", });
+    internal_static_grpcTest_GrpcResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_grpc_GrpcResponse_fieldAccessorTable = new
+    internal_static_grpcTest_GrpcResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_grpc_GrpcResponse_descriptor,
-        new java.lang.String[] { "Name2", });
+        internal_static_grpcTest_GrpcResponse_descriptor,
+        new java.lang.String[] { "Response", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -2,18 +2,18 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 option java_package = "com.example.grpc.test";
-option java_outer_classname = "GrpcProto";
+option java_outer_classname = "GrpcProtoTest";
 
-package grpc;
+package grpcTest;
 
-service GrpcService {
-  rpc Grpc (GrpcRequest) returns (GrpcResponse);
+service GrpcServicePj {
+  rpc GrpcTest (GrpcRequest) returns (GrpcResponse);
 }
 
 message GrpcRequest {
-  string name = 1;
+  string request = 1;
 }
 
 message GrpcResponse {
-  string name2 = 1;
+  string response = 1;
 }

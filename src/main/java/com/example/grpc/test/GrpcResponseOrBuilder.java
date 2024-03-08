@@ -4,16 +4,16 @@
 package com.example.grpc.test;
 
 public interface GrpcResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:grpc.GrpcResponse)
+    // @@protoc_insertion_point(interface_extends:grpcTest.GrpcResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string name2 = 1;</code>
+   * <code>string response = 1;</code>
    */
-  java.lang.String getName2();
+  java.lang.String getResponse();
   /**
-   * <code>string name2 = 1;</code>
+   * <code>string response = 1;</code>
    */
   com.google.protobuf.ByteString
-      getName2Bytes();
+      getResponseBytes();
 }

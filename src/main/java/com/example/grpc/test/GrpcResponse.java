@@ -4,11 +4,11 @@
 package com.example.grpc.test;
 
 /**
- * Protobuf type {@code grpc.GrpcResponse}
+ * Protobuf type {@code grpcTest.GrpcResponse}
  */
 public  final class GrpcResponse extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:grpc.GrpcResponse)
+    // @@protoc_insertion_point(message_implements:grpcTest.GrpcResponse)
     GrpcResponseOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use GrpcResponse.newBuilder() to construct.
@@ -16,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private GrpcResponse() {
-    name2_ = "";
+    response_ = "";
   }
 
   @java.lang.Override
@@ -46,7 +46,7 @@ private static final long serialVersionUID = 0L;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            name2_ = s;
+            response_ = s;
             break;
           }
           default: {
@@ -70,45 +70,45 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.example.grpc.test.GrpcProto.internal_static_grpc_GrpcResponse_descriptor;
+    return com.example.grpc.test.GrpcProtoTest.internal_static_grpcTest_GrpcResponse_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.example.grpc.test.GrpcProto.internal_static_grpc_GrpcResponse_fieldAccessorTable
+    return com.example.grpc.test.GrpcProtoTest.internal_static_grpcTest_GrpcResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.example.grpc.test.GrpcResponse.class, com.example.grpc.test.GrpcResponse.Builder.class);
   }
 
-  public static final int NAME2_FIELD_NUMBER = 1;
-  private volatile java.lang.Object name2_;
+  public static final int RESPONSE_FIELD_NUMBER = 1;
+  private volatile java.lang.Object response_;
   /**
-   * <code>string name2 = 1;</code>
+   * <code>string response = 1;</code>
    */
-  public java.lang.String getName2() {
-    java.lang.Object ref = name2_;
+  public java.lang.String getResponse() {
+    java.lang.Object ref = response_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      name2_ = s;
+      response_ = s;
       return s;
     }
   }
   /**
-   * <code>string name2 = 1;</code>
+   * <code>string response = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getName2Bytes() {
-    java.lang.Object ref = name2_;
+      getResponseBytes() {
+    java.lang.Object ref = response_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      name2_ = b;
+      response_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -129,8 +129,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getName2Bytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name2_);
+    if (!getResponseBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, response_);
     }
     unknownFields.writeTo(output);
   }
@@ -141,8 +141,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getName2Bytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name2_);
+    if (!getResponseBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, response_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -160,8 +160,8 @@ private static final long serialVersionUID = 0L;
     com.example.grpc.test.GrpcResponse other = (com.example.grpc.test.GrpcResponse) obj;
 
     boolean result = true;
-    result = result && getName2()
-        .equals(other.getName2());
+    result = result && getResponse()
+        .equals(other.getResponse());
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -173,8 +173,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + NAME2_FIELD_NUMBER;
-    hash = (53 * hash) + getName2().hashCode();
+    hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+    hash = (53 * hash) + getResponse().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -271,21 +271,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code grpc.GrpcResponse}
+   * Protobuf type {@code grpcTest.GrpcResponse}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:grpc.GrpcResponse)
+      // @@protoc_insertion_point(builder_implements:grpcTest.GrpcResponse)
       com.example.grpc.test.GrpcResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.example.grpc.test.GrpcProto.internal_static_grpc_GrpcResponse_descriptor;
+      return com.example.grpc.test.GrpcProtoTest.internal_static_grpcTest_GrpcResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.example.grpc.test.GrpcProto.internal_static_grpc_GrpcResponse_fieldAccessorTable
+      return com.example.grpc.test.GrpcProtoTest.internal_static_grpcTest_GrpcResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.example.grpc.test.GrpcResponse.class, com.example.grpc.test.GrpcResponse.Builder.class);
     }
@@ -308,7 +308,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      name2_ = "";
+      response_ = "";
 
       return this;
     }
@@ -316,7 +316,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.example.grpc.test.GrpcProto.internal_static_grpc_GrpcResponse_descriptor;
+      return com.example.grpc.test.GrpcProtoTest.internal_static_grpcTest_GrpcResponse_descriptor;
     }
 
     @java.lang.Override
@@ -336,7 +336,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.example.grpc.test.GrpcResponse buildPartial() {
       com.example.grpc.test.GrpcResponse result = new com.example.grpc.test.GrpcResponse(this);
-      result.name2_ = name2_;
+      result.response_ = response_;
       onBuilt();
       return result;
     }
@@ -385,8 +385,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(com.example.grpc.test.GrpcResponse other) {
       if (other == com.example.grpc.test.GrpcResponse.getDefaultInstance()) return this;
-      if (!other.getName2().isEmpty()) {
-        name2_ = other.name2_;
+      if (!other.getResponse().isEmpty()) {
+        response_ = other.response_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -418,71 +418,71 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object name2_ = "";
+    private java.lang.Object response_ = "";
     /**
-     * <code>string name2 = 1;</code>
+     * <code>string response = 1;</code>
      */
-    public java.lang.String getName2() {
-      java.lang.Object ref = name2_;
+    public java.lang.String getResponse() {
+      java.lang.Object ref = response_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        name2_ = s;
+        response_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string name2 = 1;</code>
+     * <code>string response = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getName2Bytes() {
-      java.lang.Object ref = name2_;
+        getResponseBytes() {
+      java.lang.Object ref = response_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        name2_ = b;
+        response_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string name2 = 1;</code>
+     * <code>string response = 1;</code>
      */
-    public Builder setName2(
+    public Builder setResponse(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      name2_ = value;
+      response_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string name2 = 1;</code>
+     * <code>string response = 1;</code>
      */
-    public Builder clearName2() {
+    public Builder clearResponse() {
       
-      name2_ = getDefaultInstance().getName2();
+      response_ = getDefaultInstance().getResponse();
       onChanged();
       return this;
     }
     /**
-     * <code>string name2 = 1;</code>
+     * <code>string response = 1;</code>
      */
-    public Builder setName2Bytes(
+    public Builder setResponseBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      name2_ = value;
+      response_ = value;
       onChanged();
       return this;
     }
@@ -499,10 +499,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:grpc.GrpcResponse)
+    // @@protoc_insertion_point(builder_scope:grpcTest.GrpcResponse)
   }
 
-  // @@protoc_insertion_point(class_scope:grpc.GrpcResponse)
+  // @@protoc_insertion_point(class_scope:grpcTest.GrpcResponse)
   private static final com.example.grpc.test.GrpcResponse DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.example.grpc.test.GrpcResponse();
