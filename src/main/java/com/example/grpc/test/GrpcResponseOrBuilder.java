@@ -9,10 +9,12 @@ public interface GrpcResponseOrBuilder extends
 
   /**
    * <code>string response = 1;</code>
+   * @return The response.
    */
   java.lang.String getResponse();
   /**
    * <code>string response = 1;</code>
+   * @return The bytes for response.
    */
   com.google.protobuf.ByteString
       getResponseBytes();

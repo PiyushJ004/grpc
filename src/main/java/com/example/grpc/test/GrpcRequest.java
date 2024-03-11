@@ -6,7 +6,7 @@ package com.example.grpc.test;
 /**
  * Protobuf type {@code grpcTest.GrpcRequest}
  */
-public  final class GrpcRequest extends
+public final class GrpcRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:grpcTest.GrpcRequest)
     GrpcRequestOrBuilder {
@@ -17,6 +17,13 @@ private static final long serialVersionUID = 0L;
   }
   private GrpcRequest() {
     request_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GrpcRequest();
   }
 
   @java.lang.Override
@@ -32,7 +39,6 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -50,7 +56,7 @@ private static final long serialVersionUID = 0L;
             break;
           }
           default: {
-            if (!parseUnknownFieldProto3(
+            if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
@@ -85,7 +91,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object request_;
   /**
    * <code>string request = 1;</code>
+   * @return The request.
    */
+  @java.lang.Override
   public java.lang.String getRequest() {
     java.lang.Object ref = request_;
     if (ref instanceof java.lang.String) {
@@ -100,7 +108,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string request = 1;</code>
+   * @return The bytes for request.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getRequestBytes() {
     java.lang.Object ref = request_;
@@ -159,11 +169,10 @@ private static final long serialVersionUID = 0L;
     }
     com.example.grpc.test.GrpcRequest other = (com.example.grpc.test.GrpcRequest) obj;
 
-    boolean result = true;
-    result = result && getRequest()
-        .equals(other.getRequest());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (!getRequest()
+        .equals(other.getRequest())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -343,35 +352,35 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder clone() {
-      return (Builder) super.clone();
+      return super.clone();
     }
     @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.setField(field, value);
+      return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return (Builder) super.clearField(field);
+      return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return (Builder) super.clearOneof(oneof);
+      return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         int index, java.lang.Object value) {
-      return (Builder) super.setRepeatedField(field, index, value);
+      return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.addRepeatedField(field, value);
+      return super.addRepeatedField(field, value);
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
@@ -421,6 +430,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object request_ = "";
     /**
      * <code>string request = 1;</code>
+     * @return The request.
      */
     public java.lang.String getRequest() {
       java.lang.Object ref = request_;
@@ -436,6 +446,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string request = 1;</code>
+     * @return The bytes for request.
      */
     public com.google.protobuf.ByteString
         getRequestBytes() {
@@ -452,6 +463,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string request = 1;</code>
+     * @param value The request to set.
+     * @return This builder for chaining.
      */
     public Builder setRequest(
         java.lang.String value) {
@@ -465,6 +478,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string request = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearRequest() {
       
@@ -474,6 +488,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string request = 1;</code>
+     * @param value The bytes for request to set.
+     * @return This builder for chaining.
      */
     public Builder setRequestBytes(
         com.google.protobuf.ByteString value) {
@@ -489,7 +505,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFieldsProto3(unknownFields);
+      return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
