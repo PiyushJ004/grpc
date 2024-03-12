@@ -19,7 +19,7 @@ import lombok.extern.slf4j.Slf4j;
 @EnableKafka
 @Configuration
 @ConditionalOnProperty(prefix = "grpc.kafka.producer", name = "enable", havingValue = "true")
-public class GrpckafkaProducer {
+public class GrpcKafkaProducer {
 
 	@Autowired
 	private GrpcKafkaProducerProperties kafkaProducerProperties;
